@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="378dp"
+        android:layout_height="90dp"
+        android:hint="Họ tên" />
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="376dp"
+        android:layout_height="90dp"
+        android:hint="Số điện thoại" />
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="383dp"
+        android:layout_height="88dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="Ngày hẹn" /> />
+
+    <EditText
+        android:id="@+id/etTime"
+        android:layout_width="380dp"
+        android:layout_height="82dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="Giờ hẹn" />
+
+    <EditText
+        android:id="@+id/etNote"
+        android:layout_width="381dp"
+        android:layout_height="75dp"
+        android:hint="Ghi chú (tùy chọn)" />
+
+    <Button
+        android:id="@+id/btnSubmitAppointment"
+        android:layout_width="156dp"
+        android:layout_height="71dp"
+        android:text="Đặt lịch hẹn" />
+</LinearLayout>

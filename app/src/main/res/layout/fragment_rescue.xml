@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CỨU HỘ 24/7"
+            android:textAlignment="center"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#888888"
+            android:padding="12dp" />
+
+        <!-- Giới thiệu -->
+        <TextView
+            android:text="Cứu hộ ô tô Chuyên Nghiệp Tại TP Hồ Chí Minh\n\nCứu hộ ô tô là bạn đồng hành trên các đoạn đường vắng qua là điều mà khách hàng nào cũng mong muốn. Dịch vụ cứu hộ ô tô đang được áp dụng tại rất nhiều nơi, đặc biệt là tại TP.HCM và nhiều nơi khác. Nắm bắt nhu cầu của nhiều khách hàng, Garage ô tô CARLUX cho ra mắt dịch vụ cứu hộ 24/7."
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginVertical="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/picture_12" />
+
+        <!-- Nội dung chính -->
+        <TextView
+            android:text="Quên đi lo lắng, sử dụng dịch vụ cứu hộ ô tô CARLUX ngay:\n\n• Xe bạn gặp sự cố giữa đường.\n• Xe bị chết máy, không khởi động được.\n• Mua xe mới cần kiểm tra kỹ năng trước khi vận hành.\n• Không có ai hỗ trợ bạn và gia đình trong trường hợp nguy cấp?:"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Số điện thoại chính -->
+        <TextView
+            android:text="📞 HOTLINE: 097 132 8979 - 094 365 3579"
+            android:textStyle="bold"
+            android:textColor="#B80000"
+            android:textSize="18sp"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Hình ảnh 2 -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/picture_13" />
+
+        <!-- Nút gọi -->
+        <Button
+            android:id="@+id/btn_call_hotline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gọi ngay 0971328979"
+            android:textAllCaps="false"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#FF6600"
+            android:textColor="#FFFFFF" />
+
+        <!-- Số điện thoại khẩn cấp cuối trang -->
+        <TextView
+            android:id="@+id/tv_emergency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📢 Số điện thoại khẩn cấp: 1800 123 456"
+            android:textColor="#D32F2F"
+            android:textStyle="italic"
+            android:textSize="16sp"
+            android:layout_marginTop="32dp"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</ScrollView>

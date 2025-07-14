@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="#EEEEEE">
+
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="411dp"
+        android:layout_height="55dp"
+        android:paddingTop="4dp"
+        android:text="Tên"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="411dp"
+        android:layout_height="60dp"
+        android:text="Giá"
+        android:textColor="#FF0000" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XÓA"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnAddToCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Thêm vào giỏ" />
+
+</LinearLayout>

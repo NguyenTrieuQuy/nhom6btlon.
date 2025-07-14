@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TRANG CHỦ"
+            android:textAlignment="center"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#888888"
+            android:padding="12dp" />
+
+        <!-- Banner ảnh chính -->
+        <ImageView
+            android:id="@+id/image_banner"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:src="@drawable/picture_1"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="12dp" />
+
+        <!-- 4 ảnh nhỏ ngang -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:src="@drawable/picture_2"
+                android:scaleType="centerCrop"
+                android:layout_margin="4dp" />
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:src="@drawable/picture_3"
+                android:scaleType="centerCrop"
+                android:layout_margin="4dp" />
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:src="@drawable/picture_4"
+                android:scaleType="centerCrop"
+                android:layout_margin="4dp" />
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:src="@drawable/picture_5"
+                android:scaleType="centerCrop"
+                android:layout_margin="4dp" />
+        </LinearLayout>
+
+        <!-- Dòng chào + giới thiệu -->
+        <TextView
+            android:text="Garage Ô tô CARLUX Kính Chào Quý Khách!"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="CARLUX là Garage sửa chữa bảo dưỡng xe hơi uy tín tại TP.HCM. Chuyên cung cấp dịch vụ sửa chữa xe, cứu hộ 24/7, phụ tùng chất lượng chính hãng. Đội ngũ kỹ thuật viên tay nghề cao, thiết bị hiện đại giúp mang đến sự hài lòng cho khách hàng."
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Ảnh minh họa garage -->
+
+        <!-- 3 ô thông tin -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/picture_6" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:layout_marginBottom="16dp">
+
+            <!-- Ô 1: Lịch làm việc -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#EEEEEE"
+                android:padding="8dp"
+                android:layout_margin="4dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_clock" />
+
+                <TextView
+                    android:text="Lịch làm việc"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Thứ 2 - Thứ 7\n08:00 - 17:00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- Ô 2: Hotline -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#FFEB3B"
+                android:padding="8dp"
+                android:layout_margin="4dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_phone" />
+
+                <TextView
+                    android:text="Hotline 24/7"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="097 132 8979\n094 365 3579"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- Ô 3: Địa chỉ -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#EEEEEE"
+                android:padding="8dp"
+                android:layout_margin="4dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_location" />
+
+                <TextView
+                    android:text="Địa chỉ"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="33 Nguyễn Văn Dung,\nGò Vấp, TP.HCM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Tiêu đề Quy trình -->
+        <TextView
+            android:text="QUY TRÌNH LÀM VIỆC CỦA CHÚNG TÔI"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#0000FF"
+            android:layout_marginBottom="12dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- 4 bước quy trình -->
+        <!-- Mỗi bước 1 LinearLayout vertical -->
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="92dp"
+            android:layout_height="67dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:contentDescription="Đặt lịch hẹn"
+            app:srcCompat="@drawable/ic_clock" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:text="CUỘC HẸN"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Bạn có thể liên hệ trực tiếp hoặc qua website, chúng tôi sẽ lên lịch hẹn cho quý khách."
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_search" />
+
+            <TextView
+                android:text="CHẨN ĐOÁN"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Chúng tôi sẽ kiểm tra kỹ lưỡng xe và báo giá minh bạch."
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_tools" />
+
+            <TextView
+                android:text="SỬA CHỮA"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Sửa chữa chuyên nghiệp với phụ tùng chính hãng."
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <!-- HOÀN THÀNH -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_finish"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:text="HOÀN THÀNH"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Chúng tôi kiểm tra lần cuối, bàn giao xe và hướng dẫn khách hàng chăm sóc xe sau dịch vụ."
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
